@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic Responsive Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <form id="mainForm">
+            <h2>Contact Us</h2>
+            <div class="input-group">
+                <input type="text" id="name" required placeholder="Full Name">
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" required placeholder="Email Address">
+            </div>
+            <div class="input-group">
+                <textarea id="message" rows="4" required placeholder="Your Message"></textarea>
+            </div>
+            <button type="button" id="openModalBtn">Confirm Submission</button>
+        </form>
+    </div>
+
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal-content">
+            <h3>Confirm Details</h3>
+            <p>Are you sure you want to submit this form?</p>
+            <div class="modal-buttons">
+                <button id="confirmBtn" class="confirm-btn">Yes, Submit</button>
+                <button id="closeModalBtn" class="cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
